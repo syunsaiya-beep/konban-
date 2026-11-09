@@ -9,7 +9,6 @@
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <meta name="color-scheme" content="light dark">
 <title>今晩何にする？</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Serif+JP:wght@700&display=swap">
 <style>
 /* 縦一列の1画面アプリ。紙の生成り地に朱と緑。選ぶ→作る→読む→買う、の順で流れる */
 :root{
@@ -17,8 +16,8 @@
  --accent:#B65A3E; --accent-bg:#F9E6D8; --accent-ink:#8A3220;
  --success:#5F8056; --success-bg:#E6EDDF;
  --panel-bg:#FFFFFF; --panel-ink:#241C16; --warm:#F3E8D6; --chip:#2A211B; --chip-ink:#F7F3EC;
- --serif:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Yu Gothic',sans-serif;
- --sans:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Yu Gothic',sans-serif;
+ --serif:'Hiragino Maru Gothic ProN','Yu Gothic',sans-serif;
+ --sans:'Hiragino Maru Gothic ProN','Yu Gothic',sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
  --paper:#211B16; --card:#2B231D; --ink:#EFE7DC; --ink-soft:#B9AB9B; --line:#4A3E34;
@@ -136,7 +135,7 @@ ol{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:4px}
 .intro-in{width:100%;max-width:480px;padding:calc(28px + env(safe-area-inset-top,0px)) 24px calc(28px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:22px;min-height:100%}
 .badge{align-self:flex-start;border:1.5px solid #fff;border-radius:99px;padding:2px 16px;font-size:.9rem}
 .introtop{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.intro h1{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(2.4rem,13vw,3.4rem);line-height:1.25;letter-spacing:.02em;word-break:keep-all}
+.intro h1{font-family:'Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(2.4rem,13vw,3.4rem);line-height:1.25;letter-spacing:.02em;word-break:keep-all}
 .introchar{position:relative;flex:none;display:flex;gap:2px;align-items:flex-start;padding-right:4px}
 .introchar .oy{width:clamp(96px,28vw,130px);filter:drop-shadow(0 2px 0 rgba(0,0,0,.12))}
 .sticker{writing-mode:vertical-rl;font-weight:700;font-size:1.05rem;color:#222;letter-spacing:.08em;text-shadow:-2px 0 #fff,2px 0 #fff,0 -2px #fff,0 2px #fff,-2px -2px #fff,2px 2px #fff,-2px 2px #fff,2px -2px #fff;margin-top:6px}
